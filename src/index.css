@@ -1,5 +1,9 @@
 body {
   margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +11,215 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*::before, *::after{
+  box-sizing: border-box;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header{
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.234);
+  border-bottom: 1px solid rgba(168, 166, 166, 0.37);
+}
+header div{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-box{
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-box button{
+
+  padding: 10px 20px;
+  margin: 2px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #000;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+.button-box button:hover{
+
+  background-color: #000;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sidebar
+{
+  position: relative;
+  width: 60px;
+  padding: 10px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.234);
+}
+
+.main-content{
+
+  width: 90%;
+  padding: 10px;
+  margin-left: 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 100vh;
+}
+
+#icon-box{
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-top: 1.5rem;
+  padding:5px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.334);
+}
+
+.panel-box{
+  box-sizing: border-box;
+  position: absolute;
+  padding-right: 5px ;
+  z-index: 100;
+  top: 1px;
+  left: 80px;
+  bottom: 0;
+  width: 700px;
+  height: 100%;
+  border-top: 5px solid rgb(54, 54, 252);
+  background-color: rgba(255, 255, 255, 0.664);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.334);
+}
+
+
+.panel-header h5{
+  padding: 9px 34px 9px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.356);
+
+}
+
+#add-btn-style:active{
+
+  color:#3875fa;
+}
+
+#close-icon{
+  position: absolute;
+  cursor: pointer;
+  padding: 5px;
+  right: 7px;
+  top: 7px;
+  bottom: 0px;
+}
+
+.panel-data-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+#parent-list{
+  background-color: #80808018;
+  float: left;
+  max-width: 100px;
+  height: 92%;
+  margin: 0px;
+  padding: 0px 10px 0px 15px;
+  border-right: 1px solid rgba(128, 128, 128, 0.24);
+}
+
+#parent-list li{
+  color: rgba(0, 0, 0, 0.603);
+  font-weight: 500;
+  margin-top: 10px;
+  font-size: .9rem;
+  width: fit-content;
+  cursor: pointer;
+  padding: 2px 20px;
+  list-style: none;
+  margin-bottom: 1px;
+
+}
+#parent-list li:hover, .nested-data li:hover {
+
+  background-color: #4646fc2c;
+  border-radius: 20px;
+  color: rgba(0, 0, 255, 0.671);
+}
+
+.nested-list-data-box{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 200px;
+  height: 92%;
+  padding: 0px 20px 0px 15px;
+  border-right: 1px solid rgba(128, 128, 128, 0.24);
+
+}
+
+.content-holder{
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 350px;
+  height: 80%;
+
+}
+
+
+.nested-list-data-box ul{
+  width: 100%;
+  height: 100%;
+  float: left;
+  height: 100%;
+  padding: 0px 10px 0px 5px;
+}
+.nested-data{
+
+  height: 95% !important;
+}
+.nested-data li{
+  color: rgba(0, 0, 0, 0.603);
+  font-weight: 500;
+  width: fit-content;
+  cursor: pointer;
+  font-size: .9rem;
+  list-style: none;
+  padding: 4px 10px;
+  margin-bottom: 1px;
+
 }

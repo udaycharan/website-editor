@@ -1,0 +1,653 @@
+{
+  "data": [
+    {
+      "type": "Text",
+      "ID": "P1",
+      "children": [
+        {
+          "name": "Themed texts",
+
+          "stylesArr": [
+            {
+              "ID": "style-1",
+              "width": "fit-content",
+              "h1": "Add Heading 1",
+              "h2": "Add Heading 2",
+              "draggable": true,
+              "fontweight": 900,
+              "cursor": "pointer",
+              "padding": "0px 10px 0px 10px",
+              "fontstyle": "strong"
+            },
+            { "ID": "style-2",
+              "width": "fit-content",
+              "h3": "Add heading 3",
+              "h4": "Add Heading 4",
+              "draggable": true,
+              "fontweight": 600,
+              "id" : "paragragh-1",
+              "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.", 
+              "cursor": "pointer",
+              "padding": "0px 10px 0px 10px",
+              "fontstyle": "bold"
+            },
+
+            {  
+              "ID": "style-3",
+              "width": "fit-content",
+              "h5": "Add Heading 5",
+              "h6": "Add Heading 6",
+              "draggable": true,
+              "id" : "paragragh-2",
+              "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.", 
+              "fontstyle": "italic",
+              "padding": "0px 10px 0px 10px",
+              "fontweight": 500,
+              "cursor": "pointer"
+            }
+          ],
+          "ID": "Tc1"
+        },
+
+        {
+          "name": "Titles",
+          "stylesArr": [
+
+            { 
+              
+              "ID": "style-4",
+              "ID2": "styles-4",
+              "width": "fit-content",
+              "h1": "Add Heading 1",
+              "h2": "Add Heading 2",
+              "draggable": true,
+              "fontfamily": "Roboto",
+              "cursor": "pointer",
+              "padding": "0px 10px 0px 10px",
+              "fontweight": 900
+              
+            },
+            {  
+              "ID": "style-5",
+              "ID2": "styles-5",
+              "width": "fit-content",
+              "h3": "Add heading 3",
+               "h4": "Add Heading 4",
+               "draggable": true,
+               "fontfamily": "San serif",
+               "padding": "0px 10px 0px 10px",
+               "cursor": "pointer",
+              "fontweight": 600
+              
+            },
+
+            { 
+              
+              "ID": "style-6",
+              "ID2": "styles-6",
+              "width": "fit-content",
+              "h5": "Add Heading 5",
+              "h6": "Add Heading 6",
+              "fontfamily": "Roboto",
+              "draggable": true,
+              "padding": "0px 10px 0px 10px",
+              "cursor": "pointer",
+              "fontweight": 500
+            }
+          ],
+          "ID": "Tc2"
+        },
+        {
+          "name": "Paragraphs",
+          "stylesArr": [
+            { 
+              "ID": "style-7",
+              "width": "fit-content",
+              "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+              "fontweight": 600,
+              "padding": "0px 10px 0px 10px",
+              "draggable": true,
+              "fontfamily": "Roboto",
+              "cursor": "pointer",
+              "fontstyle": "strong"
+            },
+            {  
+              
+              "ID": "style-8",
+              "width": "fit-content",
+              "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+              "fontweight": 300,
+              "padding": "0px 10px 0px 10px",
+              "fontfamily": "San serif",
+              "draggable": true,
+              "cursor": "pointer",
+              "fontstyle": "bold"
+            },
+
+            {   
+              
+              "ID": "style-9",
+              "width": "fit-content",
+              "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+              "fontstyle": "italic",
+              "draggable": true,
+              "padding": "0px 10px 0px 10px",
+              "fontfamily": "poppins",
+              "cursor": "pointer",
+              "fontweight": 400
+            }
+          ],
+          "ID": "Tc3"
+        }
+      ]
+    },
+
+    {
+      "type": "Button",
+      "ID": "P2",
+      "children": [
+        {
+          "name": "Themed Buttons",
+          "stylesArr": [
+            {
+              "ID": "style-10",
+              "cursor": "pointer",
+              "btnText" : "Buy Now",
+              "draggable": true,
+              "padding": "15px 30px",
+              "fontsize": "medium",
+              "margin": "5px",
+              "bgcolor": "#88E0EF",
+              "color": "#000",
+              "border": "none"
+            },
+
+            {
+              
+            "ID": "style-11",
+            "draggable": true,
+            "cursor": "pointer",
+            "btnText": "Buy Now",
+            "padding": "15px 30px",
+            "fontsize": "medium",
+            "margin": "5px",
+            "bgcolor": "#000D6B",
+            "color": "white",
+            "border": "1px solid white"
+            },
+            {
+            
+            "ID": "style-12",
+            "draggable": true,
+            "cursor": "pointer",
+            "btnText": "Buy Now",
+            "padding": "15px 30px",
+            "fontsize": "medium",
+            "margin": "5px",
+            "bgcolor": "#C8E3D4",
+            "color": "black",
+            "border": "1px solid #000"
+
+            },
+            {
+            "ID": "style-13",
+            "draggable": true,
+            "cursor": "pointer",
+            "btnText": "Buy Now",
+            "padding": "15px 30px",
+            "fontsize": "medium",
+            "margin": "5px",
+            "bgcolor": "#3E065F",
+            "color": "white",
+            "border": "1px solid #3E065F",
+            "borderradius": "25px"
+            }
+          ],
+          "ID": "Bc1"
+        },
+        {
+          "name": "Text & icons Buttons",
+          "stylesArr": [
+            {
+              "ID": "style-14",
+              "cursor": "pointer",
+              "btnText" : "SEND",
+              "draggable": true,
+              "padding": "15px 30px",
+              "classname": "far fa-paper-plane",
+              "iconpadding": "5px",
+              "iconsize": "20px",
+              "fontsize": "medium",
+              "margin": "4px",
+              "bgcolor": "#fff",
+              "color": "blue",
+              "border": "1px solid blue"
+            },
+
+            {
+              
+            "ID": "style-15",
+            "draggable": true,
+            "cursor": "pointer",
+            "btnText": "DOWNLOAD",
+            "classname": "fas fa-download",
+            "iconpadding": "7px",
+            "iconsize": "20px",
+            "letterspace": "1px",
+            "padding": "15px 30px",
+            "fontsize": "medium",
+            "margin": "5px",
+            "bgcolor": "#406343",
+            "color": "white",
+            "border": "1px solid white",
+            "borderradius": "5px"
+            },
+            {
+            
+            "ID": "style-16",
+            "draggable": true,
+            "cursor": "pointer",
+            "btnText": "EDIT",
+            "classname": "fas fa-pen",
+            "iconpadding": "7px",
+            "iconsize": "15px",
+            "padding": "15px 30px",
+            "fontsize": "medium",
+            "margin": "5px",
+            "bgcolor": "#C8E3D4",
+            "color": "black",
+            "border": "none"
+
+            },
+            {
+            "ID": "style-17",
+            "draggable": true,
+            "cursor": "pointer",
+            "btnText": "Buy Now",
+            "classname": "fas fa-shopping-cart",
+            "iconpadding": "7px",
+            "iconsize": "20px",
+            "padding": "15px 30px",
+            "fontsize": "medium",
+            "margin": "5px",
+            "bgcolor": "#3E065F",
+            "color": "white",
+            "border": "1px solid #3E065F",
+            "borderradius": "25px"
+            }
+          ],
+          "ID": "Bc2"
+        
+        },
+        {
+          "name": "icon Buttons",
+          "stylesArr": [
+              {
+                "ID": "style-18",
+                "classname": "far fa-comment-dots",
+                "fontsize": "30px",
+                "margin": "10px",
+                "cursor": "pointer",
+                "draggable": true
+
+              },
+              {
+                "ID": "style-19",
+                "classname": "fas fa-location-arrow",
+                "fontsize": "30px",
+                "margin": "10px",
+                "cursor": "pointer",
+                "draggable": true
+              },
+              {
+                "ID": "style-20",
+                "classname": "fas fa-home",
+                "fontsize": "30px",
+                "margin": "10px",
+                "cursor": "pointer",
+                "draggable": true
+              },
+              {
+                "ID": "style-21",
+                "classname": "fas fa-envelope",
+                "fontsize": "30px",
+                "margin": "10px",
+                "cursor": "pointer",
+                "draggable": true
+              },
+
+              {
+                "ID": "style-22",
+                "classname": "fas fa-shopping-cart",
+                "fontsize": "30px",
+                "margin": "10px",
+                "cursor": "pointer",
+                "draggable": true
+              },
+              {
+                "ID": "style-23",
+                "classname": "fas fa-user-circle",
+                "fontsize": "30px",
+                "margin": "10px",
+                "cursor": "pointer",
+                "draggable": true
+              },
+              {
+                "ID": "style-29",
+                "classname": "fas fa-bell",
+                "color": "#000",
+                "fontsize": "30px",
+                "margin": "10px",
+                "cursor": "pointer",
+                "draggable": true
+              },
+              {
+                "ID": "style-30",
+                "classname": "fas fa-link",
+                "color": "#000",
+                "fontsize": "30px",
+                "margin": "10px",
+                "cursor": "pointer",
+                "draggable": true
+              },
+              {
+                "ID": "style-31",
+                "classname": "fas fa-plane",
+                "color": "#000",
+                "fontsize": "30px",
+                "margin": "10px",
+                "cursor": "pointer",
+                "draggable": true
+              },
+              {
+                "ID": "style-32",
+                "classname": "fas fa-music",
+                "color": "#000",
+                "fontsize": "30px",
+                "margin": "10px",
+                "cursor": "pointer",
+                "draggable": true
+              },
+              {
+                "ID": "style-34",
+                "classname": "fas fa-trash",
+                "color": "#000",
+                "fontsize": "30px",
+                "margin": "10px",
+                "cursor": "pointer",
+                "draggable": true
+              },
+              {
+                "ID": "style-35",
+                "classname": "fas fa-trash-alt",
+                "color": "#000",
+                "fontsize": "30px",
+                "margin": "10px",
+                "cursor": "pointer",
+                "draggable": true
+              },
+              {
+                "ID": "style-36",
+                "classname": "fas fa-ban",
+                "color": "#000",
+                "fontsize": "30px",
+                "margin": "10px",
+                "cursor": "pointer",
+                "draggable": true
+              },
+              {
+                "ID": "style-37",
+                "classname": "fas fa-recycle",
+                "color": "#000",
+                "fontsize": "30px",
+                "margin": "10px",
+                "cursor": "pointer",
+                "draggable": true
+              },
+              {
+                "ID": "style-38",
+                "classname": "fas fa-globe",
+                "color": "#000",
+                "fontsize": "30px",
+                "margin": "10px",
+                "cursor": "pointer",
+                "draggable": true
+              },
+              {
+                "ID": "style-39",
+                "classname": "fas fa-search",
+                "color": "#000",
+                "fontsize": "30px",
+                "margin": "10px",
+                "cursor": "pointer",
+                "draggable": true
+              },
+              {
+                "ID": "style-40",
+                "classname": "fas fa-cog",
+                "color": "#000",
+                "fontsize": "30px",
+                "margin": "10px",
+                "cursor": "pointer",
+                "draggable": true
+              },
+              {
+                "ID": "style-33",
+                "classname": "fas fa-music",
+                "color": "#FF5DA2",
+                "padding": "13px",
+                "bgcolor": "#000D6B",
+                "borderradius": "10px",
+                "fontsize": "25px",
+                "margin": "10px",
+                "cursor": "pointer",
+                "draggable": true
+              },
+
+              {
+                "ID": "style-24",
+                "classname": "fas fa-camera-retro",
+                "color": "#FF5151",
+                "padding": "10px",
+                "bgcolor": "#D1E8E4",
+                "borderradius": "10px",
+                "fontsize": "30px",
+                "margin": "10px",
+                "cursor": "pointer",
+                "draggable": true
+              },
+              {
+                "ID": "style-25",
+                "classname": "fas fa-video",
+                "color": "#8E0505",
+                "padding": "10px",
+                "bgcolor": "#D1E8E4",
+                "borderradius": "10px",
+                "fontsize": "30px",
+                "margin": "10px",
+                "cursor": "pointer",
+                "draggable": true
+              },
+              {
+                "ID": "style-26",
+                "classname": "fas fa-pen",
+                "color": "#1E5128",
+                "padding": "10px",
+                "bgcolor": "#39A388",
+                "borderradius": "10px",
+                "fontsize": "30px",
+                "margin": "10px",
+                "cursor": "pointer",
+                "draggable": true
+              },
+              {
+                "ID": "style-27",
+                "classname": "fas fa-star",
+                "color": "#F78812",
+                "padding": "10px",
+                "bgcolor": "#FAEEE0",
+                "borderradius": "10px",
+                "fontsize": "30px",
+                "margin": "10px",
+                "cursor": "pointer",
+                "draggable": true
+              },
+              {
+                "ID": "style-28",
+                "classname": "fas fa-bell",
+                "color": "#F78812",
+                "padding": "10px",
+                "bgcolor": "#FAEEE0",
+                "borderradius": "10px",
+                "fontsize": "30px",
+                "margin": "10px",
+                "cursor": "pointer",
+                "draggable": true
+              }
+              
+          ],
+          "ID": "Bc3"
+        }
+    
+      ]
+    },
+    {
+      "type": "Image",
+      "ID": "P3",
+      "children": [
+        {
+          "name": "My Uploads",
+          "stylesArr": [
+            {
+              "ID": "style-41",
+              "imageUrl": "https://picsum.photos/id/235/180/320",
+              "width" : "275px",
+              "height": "180px",
+              "padding": "5px",
+              "cursor": "pointer",
+              "margin": ".3rem 0rem .1rem 1rem",
+              "borderradius": "10px"
+              
+            },
+            {
+              "ID": "style-42",
+              "imageUrl": "https://picsum.photos/id/210/320/180",
+              "width" : "275px",
+              "height": "150px",
+              "padding": "5px",
+              "cursor": "pointer",
+              "margin": ".3rem 0rem .1rem 1rem",
+              "borderradius": "10px"
+            },
+            {
+              "ID": "style-43",
+              "imageUrl": "https://picsum.photos/id/243/320/180",
+              "width" : "275px",
+              "height": "150px",
+              "padding": "5px",
+              "cursor": "pointer",
+              "margin": ".3rem 0rem .1rem 1rem",
+              "borderradius": "10px"
+            },
+            {
+              "ID": "style-44",
+              "imageUrl": "https://picsum.photos/id/250/320/180",
+              "width" : "275px",
+              "height": "150px",
+              "padding": "5px",
+              "cursor": "pointer",
+              "margin": ".3rem 0rem .1rem 1rem",
+              "borderradius": "10px"
+            },
+            {
+              "ID": "style-45",
+              "imageUrl": "https://picsum.photos/id/253/320/180",
+              "width" : "275px",
+              "height": "150px",
+              "padding": "5px",
+              "cursor": "pointer",
+              "margin": ".3rem 0rem .1rem 1rem",
+              "borderradius": "10px"
+            }
+          ],
+          
+          "ID": "Ic1"
+        },
+        {
+          "name": "My Collections",
+          "stylesArr": [
+            {
+              "ID": "style-46",
+              "imageUrl": "https://picsum.photos/id/25/320/190",
+              "width" : "275px",
+              "height": "150px",
+              "padding": "5px",
+              "cursor": "pointer",
+              "margin": ".3rem 0rem .1rem 1rem",
+              "borderradius": "10px"
+            },
+            {
+              "ID": "style-47",
+              "imageUrl": "https://picsum.photos/id/26/320/190",
+              "width" : "275px",
+              "height": "150px",
+              "padding": "5px",
+              "cursor": "pointer",
+              "margin": ".3rem 0rem .1rem 1rem",
+              "borderradius": "10px"
+            },
+            {
+              "ID": "style-48",
+              "imageUrl": "https://picsum.photos/id/27/320/190",
+              "width" : "275px",
+              "height": "150px",
+              "padding": "5px",
+              "cursor": "pointer",
+              "margin": ".3rem 0rem .1rem 1rem",
+              "borderradius": "10px"
+            }
+          ],
+         
+          "ID": "Ic2"
+        },
+        {
+          "name": "Social images",
+          "stylesArr": [
+            {
+              "ID": "style-49",
+              "imageUrl": "https://picsum.photos/id/29/320/190",
+              "width" : "275px",
+              "height": "150px",
+              "padding": "5px",
+              "cursor": "pointer",
+              "margin": ".3rem 0rem .1rem 1rem",
+              "borderradius": "10px"
+            },
+            {
+              "ID": "style-50",
+              "imageUrl": "https://picsum.photos/id/39/320/190",
+              "width" : "275px",
+              "height": "150px",
+              "padding": "5px",
+              "cursor": "pointer",
+              "margin": ".3rem 0rem .1rem 1rem",
+              "borderradius": "10px"
+            },
+            {
+              "ID": "style-51",
+              "imageUrl": "https://picsum.photos/id/49/320/190",
+              "width" : "275px",
+              "height": "150px",
+              "padding": "5px",
+              "cursor": "pointer",
+              "margin": ".3rem 0rem .1rem 1rem",
+              "borderradius": "10px"
+            }
+          ],
+        
+          "ID": "Ic3"
+        }
+      ]
+    }
+  ]
+}
