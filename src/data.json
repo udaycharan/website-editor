@@ -12,6 +12,7 @@
               "ID": "style-1",
               "width": "fit-content",
               "h1": "Add Heading 1",
+              "zindex": "5",
               "h2": "Add Heading 2",
               "draggable": true,
               "fontweight": 900,
@@ -21,8 +22,12 @@
             },
             { "ID": "style-2",
               "width": "fit-content",
+              "paraWidth": "fit-content",
+              "paraMaxWidth": "500px",
               "h3": "Add heading 3",
               "h4": "Add Heading 4",
+              "color": "#142F43",
+              "zindex": "5",
               "draggable": true,
               "fontweight": 600,
               "id" : "paragragh-1",
@@ -35,8 +40,11 @@
             {  
               "ID": "style-3",
               "width": "fit-content",
+              "paraWidth": "fit-content",
+              "paraMaxWidth": "500px",
               "h5": "Add Heading 5",
               "h6": "Add Heading 6",
+              "zindex": "5",
               "draggable": true,
               "id" : "paragragh-2",
               "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.", 
@@ -58,10 +66,12 @@
               "ID": "style-4",
               "ID2": "styles-4",
               "width": "fit-content",
-              "h1": "Add Heading 1",
-              "h2": "Add Heading 2",
+              "h1": "Big Title",
+              "h2": "Caps Title",
+              "zindex": "5",
               "draggable": true,
               "fontfamily": "Roboto",
+              "fontfamily1": "'Genos', sans-serif",
               "cursor": "pointer",
               "padding": "0px 10px 0px 10px",
               "fontweight": 900
@@ -71,12 +81,14 @@
               "ID": "style-5",
               "ID2": "styles-5",
               "width": "fit-content",
-              "h3": "Add heading 3",
-               "h4": "Add Heading 4",
-               "draggable": true,
-               "fontfamily": "San serif",
-               "padding": "0px 10px 0px 10px",
-               "cursor": "pointer",
+              "h3": "Small Title",
+              "h4": "Add Heading 4",
+              "zindex": "5",
+              "draggable": true,
+              "fontfamily": "'Oswald', sans-serif",
+              "fontfamily1": "'Genos', sans-serif",
+              "padding": "0px 10px 0px 10px",
+              "cursor": "pointer",
               "fontweight": 600
               
             },
@@ -88,7 +100,9 @@
               "width": "fit-content",
               "h5": "Add Heading 5",
               "h6": "Add Heading 6",
+              "zindex": "5",
               "fontfamily": "Roboto",
+              "fontfamily1": "'Genos', sans-serif",
               "draggable": true,
               "padding": "0px 10px 0px 10px",
               "cursor": "pointer",
@@ -103,8 +117,11 @@
             { 
               "ID": "style-7",
               "width": "fit-content",
+              "paraWidth": "fit-content",
+              "paraMaxWidth": "500px",
               "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
               "fontweight": 600,
+              "zindex": "5",
               "padding": "0px 10px 0px 10px",
               "draggable": true,
               "fontfamily": "Roboto",
@@ -115,8 +132,11 @@
               
               "ID": "style-8",
               "width": "fit-content",
+              "paraWidth": "fit-content",
+              "paraMaxWidth": "500px",
               "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
               "fontweight": 300,
+              "zindex": "5",
               "padding": "0px 10px 0px 10px",
               "fontfamily": "San serif",
               "draggable": true,
@@ -128,8 +148,11 @@
               
               "ID": "style-9",
               "width": "fit-content",
+              "paraWidth": "fit-content",
+              "paraMaxWidth": "500px",
               "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
               "fontstyle": "italic",
+              "zindex": "5",
               "draggable": true,
               "padding": "0px 10px 0px 10px",
               "fontfamily": "poppins",
@@ -154,6 +177,7 @@
               "cursor": "pointer",
               "btnText" : "Buy Now",
               "draggable": true,
+              "zindex": "5",
               "padding": "15px 30px",
               "fontsize": "medium",
               "margin": "5px",
@@ -168,6 +192,7 @@
             "draggable": true,
             "cursor": "pointer",
             "btnText": "Buy Now",
+            "zindex": "5",
             "padding": "15px 30px",
             "fontsize": "medium",
             "margin": "5px",
@@ -181,6 +206,7 @@
             "draggable": true,
             "cursor": "pointer",
             "btnText": "Buy Now",
+            "zindex": "5",
             "padding": "15px 30px",
             "fontsize": "medium",
             "margin": "5px",
@@ -194,6 +220,7 @@
             "draggable": true,
             "cursor": "pointer",
             "btnText": "Buy Now",
+            "zindex": "5",
             "padding": "15px 30px",
             "fontsize": "medium",
             "margin": "5px",
@@ -212,6 +239,7 @@
               "ID": "style-14",
               "cursor": "pointer",
               "btnText" : "SEND",
+              "zindex": "5",
               "draggable": true,
               "padding": "15px 30px",
               "classname": "far fa-paper-plane",
@@ -230,6 +258,7 @@
             "draggable": true,
             "cursor": "pointer",
             "btnText": "DOWNLOAD",
+            "zindex": "5",
             "classname": "fas fa-download",
             "iconpadding": "7px",
             "iconsize": "20px",
@@ -248,6 +277,7 @@
             "draggable": true,
             "cursor": "pointer",
             "btnText": "EDIT",
+            "zindex": "5",
             "classname": "fas fa-pen",
             "iconpadding": "7px",
             "iconsize": "15px",
@@ -264,6 +294,7 @@
             "draggable": true,
             "cursor": "pointer",
             "btnText": "Buy Now",
+            "zindex": "5",
             "classname": "fas fa-shopping-cart",
             "iconpadding": "7px",
             "iconsize": "20px",
@@ -520,6 +551,7 @@
           "stylesArr": [
             {
               "ID": "style-41",
+              "name": "Image",
               "imageUrl": "https://picsum.photos/id/235/180/320",
               "width" : "275px",
               "height": "180px",
@@ -531,6 +563,7 @@
             },
             {
               "ID": "style-42",
+              "name": "Image",
               "imageUrl": "https://picsum.photos/id/210/320/180",
               "width" : "275px",
               "height": "150px",
@@ -541,6 +574,7 @@
             },
             {
               "ID": "style-43",
+              "name": "Image",
               "imageUrl": "https://picsum.photos/id/243/320/180",
               "width" : "275px",
               "height": "150px",
@@ -551,6 +585,7 @@
             },
             {
               "ID": "style-44",
+              "name": "Image",
               "imageUrl": "https://picsum.photos/id/250/320/180",
               "width" : "275px",
               "height": "150px",
@@ -561,6 +596,7 @@
             },
             {
               "ID": "style-45",
+              "name": "Image",
               "imageUrl": "https://picsum.photos/id/253/320/180",
               "width" : "275px",
               "height": "150px",
@@ -578,6 +614,7 @@
           "stylesArr": [
             {
               "ID": "style-46",
+              "name": "Image",
               "imageUrl": "https://picsum.photos/id/25/320/190",
               "width" : "275px",
               "height": "150px",
@@ -588,6 +625,7 @@
             },
             {
               "ID": "style-47",
+              "name": "Image",
               "imageUrl": "https://picsum.photos/id/26/320/190",
               "width" : "275px",
               "height": "150px",
@@ -598,6 +636,7 @@
             },
             {
               "ID": "style-48",
+              "name": "Image",
               "imageUrl": "https://picsum.photos/id/27/320/190",
               "width" : "275px",
               "height": "150px",
@@ -615,6 +654,7 @@
           "stylesArr": [
             {
               "ID": "style-49",
+              "name": "Image",
               "imageUrl": "https://picsum.photos/id/29/320/190",
               "width" : "275px",
               "height": "150px",
@@ -625,6 +665,7 @@
             },
             {
               "ID": "style-50",
+              "name": "Image",
               "imageUrl": "https://picsum.photos/id/39/320/190",
               "width" : "275px",
               "height": "150px",
@@ -635,6 +676,7 @@
             },
             {
               "ID": "style-51",
+              "name": "Image",
               "imageUrl": "https://picsum.photos/id/49/320/190",
               "width" : "275px",
               "height": "150px",
@@ -648,6 +690,73 @@
           "ID": "Ic3"
         }
       ]
+    },
+    {
+      "type": "Header",
+      "ID": "P4",
+      "children": [
+        {
+          "name": "Headers",
+          "stylesArr": [
+            { 
+              "ID": "style-52",
+              "name": "Header",
+              "draggable": "true",
+              "cursor": "pointer",
+              "title": "Header-1",
+              "backgroundColor": "#6166B3",
+              "width": "60%",
+              "height": "30%",
+              "maxWidth": "100%",
+              "margin": "1rem"
+            },
+            {
+              "ID": "style-53",
+              "name": "Header",
+              "draggable": "true",
+              "cursor": "pointer",
+              "title": "Header-2",
+              "backgroundColor": "#6166B3",
+              "width": "60%",
+              "height": "30%",
+              "maxWidth": "100%",
+              "margin": "1rem"
+            }
+          ],
+          "ID": "Hc1"
+        }
+      ]
+    },
+    {
+      "type": "Footer",
+      "ID": "P5",
+      "children": [
+        {
+          "name": "Footer-style-1",
+          "stylesArr": [
+            { 
+              "ID": "style-54",
+              "backgroundColor": "#181D31",
+              "width": "60%",
+              "maxWidth": "100%"
+            }
+          ],
+          "ID": "Fc1"
+        },
+        {
+          "name": "Footer-style-2",
+          "stylesArr": [
+            {
+              "ID": "style-55",
+              "backgroundColor": "#EDEDED",
+              "width": "60%",
+              "maxWidth": "100%"
+            }
+          ],
+          "ID": "Fc2"
+        }
+      ]
+
     }
   ]
 }

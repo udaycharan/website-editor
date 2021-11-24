@@ -15,7 +15,7 @@ function Header(props){
             </div>
             <div className= "button-box">
                 <button onClick={props.downloadFileAsImage}>Download as image</button>
-            <button onClick={props.downloadFile}>Download Html</button>
+            <button onClick={props.downloadFile}>Download as Html</button>
             </div>
  
         </header>
