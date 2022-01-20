@@ -1,0 +1,112 @@
+.footer{
+    background-color: #EDEDED;
+    padding: 1rem;
+    width: 60%;
+    height: 30%;
+    max-width: 100%;
+    margin: 1rem;
+    text-align: center;
+    cursor: pointer;
+  
+  }
+
+  .header{
+
+    text-align: center;
+    padding: 1rem;
+    background-color: #6166B3;
+    width: 60%;
+    height: 30%;
+    max-width: 100%;
+    margin: 1rem;
+    cursor: pointer;
+  }
+
+  .social_images{
+
+    width: 275px;
+    height: 150px;
+    padding: 5px;
+    cursor: pointer;
+    margin: .3rem 0rem .1rem 1rem;
+    border-radius: 10px;
+  }
+
+  .link-1{
+    display: block;
+    cursor: pointer;
+    width: fit-content;
+    margin: 2rem auto;
+    text-decoration: none;
+  }
+
+  .link-1:hover{
+    cursor: pointer;
+  }
+
+  .link-2{
+    display: block;
+    cursor: pointer;
+    margin: 2rem auto;
+    width: fit-content;
+    text-decoration: none;
+    border-bottom: 1px dotted black;
+  }
+  .link-3{
+    display: block;
+    cursor: pointer;
+    margin: 2rem auto;
+    width: fit-content;
+    text-decoration: underline;
+  }
+  .link-4{
+    display: block;
+    cursor: pointer;
+    margin: 2rem auto;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    background-color:#577d7e;
+    padding: .6rem;
+    border-radius: 5px;
+  }
+
+  .link-5{
+    display: block;
+    cursor: pointer;
+    margin: 2rem auto;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: teal;
+    background-color: #dbcbcb;
+    padding: 1rem;
+    border-radius: 25px;
+  }
+
+  
+  .link-6{
+    display: block;
+    cursor: pointer;
+    margin: 2rem auto;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    background-color:transparent;
+    border: 1px solid gray;
+    padding: .5rem;
+    border-radius: 10px;
+  }
+
+  .panel-form1{
+    background-color: #6166B3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    max-width: 500px;
+    min-height: 300px;
+    max-height: 600px;
+
+  }

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import "./panel_styles.css";
 import App from './App';
 
 

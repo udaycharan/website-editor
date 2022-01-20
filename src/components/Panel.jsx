@@ -1,13 +1,26 @@
 import React, { useState } from "react";
 import data from "../data.json";
 import { FaTimes } from "react-icons/fa";
+import { MdDriveFolderUpload } from "react-icons/md";
 
 function SidePanel(props) {
   let panelData = data.data;
   const [isListItemClicked, setListItem] = useState(false);
-  const [tag, setTag] = useState("");
+  const [parentTag, setTag] = useState("");
   const [isNestedListClicked, setNestedList] = useState(false);
   const [nestListTag, setNestedListTag] = useState("");
+
+  let uploadImageInitialData = panelData
+    .filter((el) => el.type === "Image")
+    .map((ele) => ele.children)
+    .flat()
+    .filter((ele) => ele.name === "My Uploads")
+    .map((ele) => ele.stylesArr)
+    .flat();
+
+  const [uploadedImageList, setUploadedImageList] = useState(
+    uploadImageInitialData
+  );
 
   const closePanel = () => {
     props.setBtn(false);
@@ -19,7 +32,9 @@ function SidePanel(props) {
       element.className === "Button" ||
       element.className === "Image" ||
       element.className === "Header" ||
-      element.className === "Footer"
+      element.className === "Footer" ||
+      element.className === "Links" ||
+      element.className === "Forms"
     ) {
       setListItem(true);
       setTag(element.className);
@@ -49,13 +64,33 @@ function SidePanel(props) {
       element.id === "Social images" ||
       element.id === "Headers" ||
       element.id === "Footer-style-1" ||
-      element.id === "Footer-style-2"
+      element.id === "Footer-style-2" ||
+      element.id === "links" ||
+      element.id === "forms"
     ) {
       setNestedList(true);
       setNestedListTag(element.id);
     } else {
       setNestedList(false);
     }
+  };
+
+  const uploadFile = () => {
+    document.querySelector("#file-upload").click();
+  };
+
+  const selectFile = (event) => {
+    let imageObj = {};
+
+    if (event.target.files.length !== 0) {
+      let image = URL.createObjectURL(event.target.files[0]);
+      imageObj.ID = image;
+      imageObj.name = "Image";
+      imageObj.classname = "social_images";
+      imageObj.imageUrl = image;
+    } else return;
+
+    setUploadedImageList([...uploadedImageList, imageObj]);
   };
 
   return (
@@ -83,8 +118,8 @@ function SidePanel(props) {
         </ul>
 
         <div className="nested-list-data-box">
-          {isListItemClicked && tag === "Text" ? (
-            <ul key={tag} className="nested-data">
+          {isListItemClicked && parentTag === "Text" ? (
+            <ul key={parentTag} className="nested-data">
               {panelData
                 .filter((el) => el.type === "Text")
                 .map((ele) => ele.children)
@@ -100,7 +135,7 @@ function SidePanel(props) {
                   </li>
                 ))}
             </ul>
-          ) : isListItemClicked && tag === "Button" ? (
+          ) : isListItemClicked && parentTag === "Button" ? (
             <ul className="nested-data">
               {panelData
                 .filter((el) => el.type === "Button")
@@ -117,25 +152,40 @@ function SidePanel(props) {
                   </li>
                 ))}
             </ul>
-          ) : isListItemClicked && tag === "Image" ? (
-            <ul key={tag} className="nested-data">
-              {panelData
-                .filter((el) => el.type === "Image")
-                .map((ele) => ele.children)
-                .flat()
-                .map((childObj) => (
-                  <li
-                    key={childObj.ID}
-                    className="image-nested-list"
-                    id={childObj.name}
-                    onClick={(event) => handleNestedList(event.target)}
-                  >
-                    {childObj.name}
-                  </li>
-                ))}
-            </ul>
-          ) : isListItemClicked && tag === "Header" ? (
-            <ul key={tag} className="nested-data">
+          ) : isListItemClicked && parentTag === "Image" ? (
+            <>
+              <ul key={parentTag} className="nested-data">
+                {panelData
+                  .filter((el) => el.type === "Image")
+                  .map((ele) => ele.children)
+                  .flat()
+                  .map((childObj) => (
+                    <li
+                      key={childObj.ID}
+                      className="image-nested-list"
+                      id={childObj.name}
+                      onClick={(event) => handleNestedList(event.target)}
+                    >
+                      {childObj.name}
+                    </li>
+                  ))}
+              </ul>
+              <MdDriveFolderUpload
+                key=""
+                className="sidebar-upload-btn"
+                title="upload"
+                onClick={() => {
+                  uploadFile();
+                }}
+              />
+              <input
+                type="file"
+                id="file-upload"
+                onChange={(event) => selectFile(event)}
+              />
+            </>
+          ) : isListItemClicked && parentTag === "Header" ? (
+            <ul key={parentTag} className="nested-data">
               {panelData
                 .filter((el) => el.type === "Header")
                 .map((ele) => ele.children)
@@ -151,8 +201,8 @@ function SidePanel(props) {
                   </li>
                 ))}
             </ul>
-          ) : isListItemClicked && tag === "Footer" ? (
-            <ul key={tag} className="nested-data">
+          ) : isListItemClicked && parentTag === "Footer" ? (
+            <ul key={parentTag} className="nested-data">
               {panelData
                 .filter((el) => el.type === "Footer")
                 .map((ele) => ele.children)
@@ -161,6 +211,40 @@ function SidePanel(props) {
                   <li
                     key={childObj.ID}
                     className="footer-nested-list"
+                    id={childObj.name}
+                    onClick={(event) => handleNestedList(event.target)}
+                  >
+                    {childObj.name}
+                  </li>
+                ))}
+            </ul>
+          ) : isListItemClicked && parentTag === "Links" ? (
+            <ul key={parentTag} className="nested-data">
+              {panelData
+                .filter((el) => el.type === "Links")
+                .map((ele) => ele.children)
+                .flat()
+                .map((childObj) => (
+                  <li
+                    key={childObj.ID}
+                    className="links-nested-list"
+                    id={childObj.name}
+                    onClick={(event) => handleNestedList(event.target)}
+                  >
+                    {childObj.name}
+                  </li>
+                ))}
+            </ul>
+          ) : isListItemClicked && parentTag === "Forms" ? (
+            <ul key={parentTag} className="nested-data">
+              {panelData
+                .filter((el) => el.type === "Forms")
+                .map((ele) => ele.children)
+                .flat()
+                .map((childObj) => (
+                  <li
+                    key={childObj.ID}
+                    className="forms-nested-list"
                     id={childObj.name}
                     onClick={(event) => handleNestedList(event.target)}
                   >
@@ -574,7 +658,7 @@ function SidePanel(props) {
                 .filter((ele) => ele.name === "My Uploads")
                 .map((ele) => (
                   <div key={ele.name}>
-                    {ele.stylesArr.map((style) => (
+                    {uploadedImageList.map((style) => (
                       <img
                         draggable={style.draggable}
                         id={style.ID}
@@ -584,16 +668,8 @@ function SidePanel(props) {
                         alt="description"
                         name={style.name}
                         key={style.ID}
-                        style={{
-                          width: `${style.width}`,
-                          height: `${style.height}`,
-                          margin: `${style.margin}`,
-                          padding: `${style.padding}`,
-                          cursor: `${style.cursor}`,
-                          borderRadius: `${style.borderradius}`,
-                        }}
                         className={style.classname}
-                      ></img>
+                      />
                     ))}
                   </div>
                 ))
@@ -615,16 +691,8 @@ function SidePanel(props) {
                         alt="description"
                         name={style.name}
                         key={style.ID}
-                        style={{
-                          width: `${style.width}`,
-                          height: `${style.height}`,
-                          margin: `${style.margin}`,
-                          padding: `${style.padding}`,
-                          cursor: `${style.cursor}`,
-                          borderRadius: `${style.borderradius}`,
-                        }}
                         className={style.classname}
-                      ></img>
+                      />
                     ))}
                   </div>
                 ))
@@ -645,17 +713,9 @@ function SidePanel(props) {
                         src={style.imageUrl}
                         alt="description"
                         name={style.name}
-                        key={style.ID}
-                        style={{
-                          width: `${style.width}`,
-                          height: `${style.height}`,
-                          margin: `${style.margin}`,
-                          padding: `${style.padding}`,
-                          cursor: `${style.cursor}`,
-                          borderRadius: `${style.borderradius}`,
-                        }}
                         className={style.classname}
-                      ></img>
+                        key={style.ID}
+                      />
                     ))}
                   </div>
                 ))
@@ -668,24 +728,112 @@ function SidePanel(props) {
                 .map((ele) => (
                   <div key={ele.name}>
                     {ele.stylesArr.map((style) => (
-                      <div
+                      <header
                         key={style.ID}
                         id={style.ID}
-                        draggable= {style.draggable}
+                        draggable={style.draggable}
                         onDragStart={drag}
                         onDragOver={dragOver}
-                        name={style.name}
-                        style={{
-                          cursor: `${style.cursor}`,
-                          backgroundColor: `${style.backgroundColor}`,
-                          width: `${style.width}`,
-                          maxWidth: `${style.maxWidth}`,
-                          margin: `${style.margin}`,
-                          height: `${style.height}`
-                        }}
+                        className={style.name}
+                      >
+                        <h5>{style.title}</h5>
+                      </header>
+                    ))}
+                  </div>
+                ))
+            : isNestedListClicked && nestListTag === "links"
+            ? panelData
+                .filter((el) => el.type === "Links")
+                .map((ele) => ele.children)
+                .flat()
+                .filter((ele) => ele.name === "links")
+                .map((ele) => (
+                  <div key={ele.name}>
+                    {ele.stylesArr.map((style) => (
+                      <a
+                        href={style.href}
+                        key={style.ID}
+                        id={style.ID}
+                        draggable={style.draggable}
+                        onDragStart={drag}
+                        onDragOver={dragOver}
+                        className={style.name}
                       >
                         {style.title}
-                      </div>
+                      </a>
+                    ))}
+                  </div>
+                ))
+            : isNestedListClicked && nestListTag === "Footer-style-1"
+            ? panelData
+                .filter((el) => el.type === "Footer")
+                .map((ele) => ele.children)
+                .flat()
+                .filter((ele) => ele.name === "Footer-style-1")
+                .map((ele) => (
+                  <div key={ele.name}>
+                    {ele.stylesArr.map((style) => (
+                      <footer
+                        key={style.ID}
+                        id={style.ID}
+                        draggable={style.draggable}
+                        onDragStart={drag}
+                        onDragOver={dragOver}
+                        className={style.name}
+                      >
+                        <h5>{style.title}</h5>
+                      </footer>
+                    ))}
+                  </div>
+                ))
+            : isNestedListClicked && nestListTag === "Footer-style-2"
+            ? panelData
+                .filter((el) => el.type === "Footer")
+                .map((ele) => ele.children)
+                .flat()
+                .filter((ele) => ele.name === "Footer-style-2")
+                .map((ele) => (
+                  <div key={ele.name}>
+                    {ele.stylesArr.map((style) => (
+                      <footer
+                        key={style.ID}
+                        id={style.ID}
+                        draggable={style.draggable}
+                        onDragStart={drag}
+                        onDragOver={dragOver}
+                        className={style.name}
+                      >
+                        <h5>{style.title}</h5>
+                      </footer>
+                    ))}
+                  </div>
+                ))
+            : isNestedListClicked && nestListTag === "forms"
+            ? panelData
+                .filter((el) => el.type === "Forms")
+                .map((ele) => ele.children)
+                .flat()
+                .filter((ele) => ele.name === "forms")
+                .map((ele) => (
+                  <div key={ele.name}>
+                    {ele.stylesArr.map((style) => (
+                      <form
+                        key={style.ID}
+                        id={style.ID}
+                        draggable={style.draggable}
+                        onDragStart={drag}
+                        onDragOver={dragOver}
+                        className={style.name}
+                      >
+                        <h3>Login</h3>
+                        <input type="text" name="username" id="form-username" />
+                        <input
+                          type="password"
+                          name="password"
+                          id="form-password"
+                        />
+                        <button>Login</button>
+                      </form>
                     ))}
                   </div>
                 ))

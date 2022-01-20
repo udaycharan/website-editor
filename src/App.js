@@ -1,58 +1,20 @@
-import React,{ useRef, useCallback } from "react";
-import SideBar from "./components/SideBar"
-import Content from "./components/Content";
-import Header from "./components/Header.jsx";
-import { toPng } from 'html-to-image';
+import Editor from "./components/Editor.jsx";
+import HomePage from "./components/LandingPage";
+import {BrowserRouter as Router, Routes, Route}  from "react-router-dom";
 
 function App() {
-  const nodeRef = useRef(null);
+  
  
-
-  const downloadFile=()=>{
-
-    if(nodeRef.current === null){
-
-      return;
-    }
-
-    const obj = nodeRef.current.outerHTML
-    const blob = new Blob([obj], {type : 'application/html'});
-    let url = window.URL.createObjectURL(blob, {type: "application/html"});
-    let a = document.createElement('a');
-    a.href = url;
-    a.download = 'index.html';
-    a.click();
-  }
-
-
-  const downloadFileAsImage = useCallback(()=>{
-
-      if(nodeRef.current === null){
-
-          return;
-      }
-
-      toPng(nodeRef.current, { cacheBust: true, })
-      .then((dataUrl) => {
-        console.log(dataUrl);
-        const link = document.createElement('a')
-        link.download = 'preview.png'
-        link.href = dataUrl
-        link.click()
-      })
-      .catch((err) => {
-        console.log(err)
-      })
-  }, [nodeRef])
-
-
   return (
-    <div className="App">
-      <Header downloadFile={downloadFile} downloadFileAsImage={downloadFileAsImage}/>
-      <div className="main-container">
-      <SideBar/>
-      <Content nodeRef={nodeRef}/>
-      </div>
+    <div className="App" >
+
+     <Router>
+        <Routes>
+          <Route  path="/" element={<HomePage/>} />
+          <Route  path="/editor" element={<Editor/>} />
+        </Routes>
+      </Router>
+ 
     </div>
   );
 }

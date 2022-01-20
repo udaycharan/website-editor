@@ -1,25 +1,45 @@
 import React from "react";
-// import * as htmlToImage from 'html-to-image';
+import { VscEditorLayout } from "react-icons/vsc";
+import DarkTheme from "react-dark-theme";
 
-
-function Header(props){
+function Header(props) {
 
    
+const lightTheme = {
+  background: 'white',
+  text: 'black',
+  textColor: "#343A40",
+  logoColor: "#3875fa"
 
-
-    return(
-        <header>
-            <div>
-                <h2 style={{margin: "0"}}>Website Editor</h2>
-                <small style={{color: "#000D6B", fontWeight: "600"}}><i>Design in your way</i></small>
-            </div>
-            <div className= "button-box">
-                <button onClick={props.downloadFileAsImage}>Download as image</button>
-            <button onClick={props.downloadFile}>Download as Html</button>
-            </div>
+}
  
-        </header>
-    );
+const darkTheme = {
+  background: '#041C32',
+  text: 'gray',
+  textColor: "#FF87CA",
+  logoColor: "gray"
+  
+}
+
+
+  return (
+    <header>
+      <div>
+        <h2 style={{ margin: "0" }}>
+          <VscEditorLayout className="logo" />
+          Website Editor
+        </h2>
+        <small className="logo_caption">
+          <i>Design in your way</i>
+        </small>
+      </div>
+      <div className="button-box">
+        <DarkTheme light={lightTheme} dark={darkTheme} defaultDark={false} className= "theme-icon"/>
+        <button onClick={props.downloadFileAsImage}>Download as image</button>
+        <button onClick={props.downloadFile}>Download as Html</button>
+      </div>
+    </header>
+  );
 }
 
 export default Header;

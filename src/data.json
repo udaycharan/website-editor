@@ -191,7 +191,7 @@
             "ID": "style-11",
             "draggable": true,
             "cursor": "pointer",
-            "btnText": "Buy Now",
+            "btnText": "LOGIN",
             "zindex": "5",
             "padding": "15px 30px",
             "fontsize": "medium",
@@ -205,7 +205,7 @@
             "ID": "style-12",
             "draggable": true,
             "cursor": "pointer",
-            "btnText": "Buy Now",
+            "btnText": "SIGN UP",
             "zindex": "5",
             "padding": "15px 30px",
             "fontsize": "medium",
@@ -219,7 +219,7 @@
             "ID": "style-13",
             "draggable": true,
             "cursor": "pointer",
-            "btnText": "Buy Now",
+            "btnText": "SHOP NOW",
             "zindex": "5",
             "padding": "15px 30px",
             "fontsize": "medium",
@@ -551,59 +551,40 @@
           "stylesArr": [
             {
               "ID": "style-41",
+              "draggable": true,
               "name": "Image",
-              "imageUrl": "https://picsum.photos/id/235/180/320",
-              "width" : "275px",
-              "height": "180px",
-              "padding": "5px",
-              "cursor": "pointer",
-              "margin": ".3rem 0rem .1rem 1rem",
-              "borderradius": "10px"
+              "classname": "social_images",
+              "imageUrl": "https://picsum.photos/id/235/180/320"   
               
             },
             {
               "ID": "style-42",
               "name": "Image",
-              "imageUrl": "https://picsum.photos/id/210/320/180",
-              "width" : "275px",
-              "height": "150px",
-              "padding": "5px",
-              "cursor": "pointer",
-              "margin": ".3rem 0rem .1rem 1rem",
-              "borderradius": "10px"
+              "draggable": true,
+              "classname": "social_images",
+              "imageUrl": "https://picsum.photos/id/210/320/180"
             },
+
             {
               "ID": "style-43",
               "name": "Image",
-              "imageUrl": "https://picsum.photos/id/243/320/180",
-              "width" : "275px",
-              "height": "150px",
-              "padding": "5px",
-              "cursor": "pointer",
-              "margin": ".3rem 0rem .1rem 1rem",
-              "borderradius": "10px"
+              "draggable": true,
+              "classname": "social_images",
+              "imageUrl": "https://picsum.photos/id/243/320/180"
             },
             {
               "ID": "style-44",
               "name": "Image",
-              "imageUrl": "https://picsum.photos/id/250/320/180",
-              "width" : "275px",
-              "height": "150px",
-              "padding": "5px",
-              "cursor": "pointer",
-              "margin": ".3rem 0rem .1rem 1rem",
-              "borderradius": "10px"
+              "draggable": true,
+              "classname": "social_images",
+              "imageUrl": "https://picsum.photos/id/250/320/180"
             },
             {
               "ID": "style-45",
               "name": "Image",
-              "imageUrl": "https://picsum.photos/id/253/320/180",
-              "width" : "275px",
-              "height": "150px",
-              "padding": "5px",
-              "cursor": "pointer",
-              "margin": ".3rem 0rem .1rem 1rem",
-              "borderradius": "10px"
+              "draggable": true,
+              "classname": "social_images",
+              "imageUrl": "https://picsum.photos/id/253/320/180"
             }
           ],
           
@@ -615,35 +596,23 @@
             {
               "ID": "style-46",
               "name": "Image",
-              "imageUrl": "https://picsum.photos/id/25/320/190",
-              "width" : "275px",
-              "height": "150px",
-              "padding": "5px",
-              "cursor": "pointer",
-              "margin": ".3rem 0rem .1rem 1rem",
-              "borderradius": "10px"
+              "draggable": true,
+              "classname": "social_images",
+              "imageUrl": "https://picsum.photos/id/25/320/190"
             },
             {
               "ID": "style-47",
               "name": "Image",
-              "imageUrl": "https://picsum.photos/id/26/320/190",
-              "width" : "275px",
-              "height": "150px",
-              "padding": "5px",
-              "cursor": "pointer",
-              "margin": ".3rem 0rem .1rem 1rem",
-              "borderradius": "10px"
+              "draggable": true,
+              "classname": "social_images",
+              "imageUrl": "https://picsum.photos/id/26/320/190"
             },
             {
               "ID": "style-48",
               "name": "Image",
-              "imageUrl": "https://picsum.photos/id/27/320/190",
-              "width" : "275px",
-              "height": "150px",
-              "padding": "5px",
-              "cursor": "pointer",
-              "margin": ".3rem 0rem .1rem 1rem",
-              "borderradius": "10px"
+              "draggable": true,
+              "classname": "social_images",
+              "imageUrl": "https://picsum.photos/id/27/320/190"
             }
           ],
          
@@ -655,35 +624,26 @@
             {
               "ID": "style-49",
               "name": "Image",
-              "imageUrl": "https://picsum.photos/id/29/320/190",
-              "width" : "275px",
-              "height": "150px",
-              "padding": "5px",
-              "cursor": "pointer",
-              "margin": ".3rem 0rem .1rem 1rem",
-              "borderradius": "10px"
+              "draggable": true,
+              "classname": "social_images",
+              "imageUrl": "https://picsum.photos/id/29/320/190"
+             
             },
             {
               "ID": "style-50",
               "name": "Image",
-              "imageUrl": "https://picsum.photos/id/39/320/190",
-              "width" : "275px",
-              "height": "150px",
-              "padding": "5px",
-              "cursor": "pointer",
-              "margin": ".3rem 0rem .1rem 1rem",
-              "borderradius": "10px"
+              "draggable": true,
+              "classname": "social_images",
+              "imageUrl": "https://picsum.photos/id/39/320/190"
+              
             },
             {
               "ID": "style-51",
               "name": "Image",
-              "imageUrl": "https://picsum.photos/id/49/320/190",
-              "width" : "275px",
-              "height": "150px",
-              "padding": "5px",
-              "cursor": "pointer",
-              "margin": ".3rem 0rem .1rem 1rem",
-              "borderradius": "10px"
+              "draggable": true,
+              "classname": "social_images",
+              "imageUrl": "https://picsum.photos/id/49/320/190"
+          
             }
           ],
         
@@ -700,33 +660,24 @@
           "stylesArr": [
             { 
               "ID": "style-52",
-              "name": "Header",
+              "name": "header",
               "draggable": "true",
-              "cursor": "pointer",
-              "title": "Header-1",
-              "backgroundColor": "#6166B3",
-              "width": "60%",
-              "height": "30%",
-              "maxWidth": "100%",
-              "margin": "1rem"
+              "title": "Header-1"
+              
+              
             },
             {
               "ID": "style-53",
-              "name": "Header",
+              "name": "header",
               "draggable": "true",
-              "cursor": "pointer",
-              "title": "Header-2",
-              "backgroundColor": "#6166B3",
-              "width": "60%",
-              "height": "30%",
-              "maxWidth": "100%",
-              "margin": "1rem"
+              "title": "Header-2"
             }
           ],
           "ID": "Hc1"
         }
       ]
     },
+
     {
       "type": "Footer",
       "ID": "P5",
@@ -736,9 +687,10 @@
           "stylesArr": [
             { 
               "ID": "style-54",
-              "backgroundColor": "#181D31",
-              "width": "60%",
-              "maxWidth": "100%"
+              "name": "footer",
+              "title": "footer",
+              "draggable": "true"
+              
             }
           ],
           "ID": "Fc1"
@@ -748,12 +700,102 @@
           "stylesArr": [
             {
               "ID": "style-55",
-              "backgroundColor": "#EDEDED",
-              "width": "60%",
-              "maxWidth": "100%"
+              "name": "footer",
+              "title": "footer",
+              "draggable": "true"
             }
           ],
           "ID": "Fc2"
+        }
+      ]
+
+    },
+
+    {
+
+      "type": "Links",
+      "ID" : "P6",
+      "children" : [
+        {
+
+          "name" : "links",
+          "ID" : "Lc1",
+          "stylesArr" : [
+            {
+
+              "ID" : "style-56",
+              "name" : "link-1",
+              "href" : "#",
+              "target" : "_blank",
+              "title" : "link",
+              "draggable" : "true"
+
+            },
+            {
+              "ID" : "style-57",
+              "name" : "link-2",
+              "href" : "#",
+              "target" : "_blank",
+              "title" : "link",
+              "draggable" : "true"
+            },
+            {
+              "ID" : "style-58",
+              "name" : "link-3",
+              "href" : "#",
+              "target" : "_blank",
+              "title" : "link",
+              "draggable" : "true"
+            },
+            {
+              "ID" : "style-59",
+              "name" : "link-4",
+              "href" : "#",
+              "target" : "_blank",
+              "title" : "link",
+              "draggable" : "true"
+            },
+            {
+              "ID" : "style-60",
+              "name" : "link-5",
+              "href" : "#",
+              "target" : "_blank",
+              "title" : "link",
+              "draggable" : "true"
+            },
+            {
+              "ID" : "style-61",
+              "name" : "link-6",
+              "href" : "#",
+              "target" : "_blank",
+              "title" : "link",
+              "draggable" : "true"
+            }
+
+          ]
+        }
+      ]
+
+    },
+    {
+
+      "type": "Forms",
+      "ID" : "P7",
+      "children" : [
+        {
+
+          "name" : "forms",
+          "ID" : "Fc1",
+          "stylesArr" : [
+            {
+
+              "ID" : "style-62",
+              "name" : "panel-form1",
+              "draggable" : "true"
+
+            }
+          
+          ]
         }
       ]
 
