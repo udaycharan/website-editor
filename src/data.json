@@ -177,13 +177,7 @@
               "cursor": "pointer",
               "btnText" : "Buy Now",
               "draggable": true,
-              "zindex": "5",
-              "padding": "15px 30px",
-              "fontsize": "medium",
-              "margin": "5px",
-              "bgcolor": "#88E0EF",
-              "color": "#000",
-              "border": "none"
+              "classname" : "themed_buttons"
             },
 
             {
@@ -192,13 +186,8 @@
             "draggable": true,
             "cursor": "pointer",
             "btnText": "LOGIN",
-            "zindex": "5",
-            "padding": "15px 30px",
-            "fontsize": "medium",
-            "margin": "5px",
-            "bgcolor": "#000D6B",
-            "color": "white",
-            "border": "1px solid white"
+            "classname" : "themed_buttons"
+            
             },
             {
             
@@ -206,13 +195,7 @@
             "draggable": true,
             "cursor": "pointer",
             "btnText": "SIGN UP",
-            "zindex": "5",
-            "padding": "15px 30px",
-            "fontsize": "medium",
-            "margin": "5px",
-            "bgcolor": "#C8E3D4",
-            "color": "black",
-            "border": "1px solid #000"
+            "classname" : "themed_buttons"
 
             },
             {
@@ -220,14 +203,7 @@
             "draggable": true,
             "cursor": "pointer",
             "btnText": "SHOP NOW",
-            "zindex": "5",
-            "padding": "15px 30px",
-            "fontsize": "medium",
-            "margin": "5px",
-            "bgcolor": "#3E065F",
-            "color": "white",
-            "border": "1px solid #3E065F",
-            "borderradius": "25px"
+            "classname" : "themed_buttons"
             }
           ],
           "ID": "Bc1"
@@ -239,72 +215,43 @@
               "ID": "style-14",
               "cursor": "pointer",
               "btnText" : "SEND",
-              "zindex": "5",
               "draggable": true,
-              "padding": "15px 30px",
               "classname": "far fa-paper-plane",
               "iconpadding": "5px",
               "iconsize": "20px",
-              "fontsize": "medium",
-              "margin": "4px",
-              "bgcolor": "#fff",
-              "color": "blue",
-              "border": "1px solid blue"
+              "className": "text_icon_buttons_style_1"
             },
 
             {
               
             "ID": "style-15",
             "draggable": true,
-            "cursor": "pointer",
             "btnText": "DOWNLOAD",
-            "zindex": "5",
             "classname": "fas fa-download",
+            "className": "text_icon_buttons_style_2",
             "iconpadding": "7px",
-            "iconsize": "20px",
-            "letterspace": "1px",
-            "padding": "15px 30px",
-            "fontsize": "medium",
-            "margin": "5px",
-            "bgcolor": "#406343",
-            "color": "white",
-            "border": "1px solid white",
-            "borderradius": "5px"
+            "iconsize": "20px"
             },
             {
             
             "ID": "style-16",
             "draggable": true,
-            "cursor": "pointer",
             "btnText": "EDIT",
-            "zindex": "5",
             "classname": "fas fa-pen",
             "iconpadding": "7px",
             "iconsize": "15px",
-            "padding": "15px 30px",
-            "fontsize": "medium",
-            "margin": "5px",
-            "bgcolor": "#C8E3D4",
-            "color": "black",
-            "border": "none"
+            "className":"text_icon_buttons_style_3"
+
 
             },
             {
             "ID": "style-17",
             "draggable": true,
-            "cursor": "pointer",
             "btnText": "Buy Now",
-            "zindex": "5",
             "classname": "fas fa-shopping-cart",
+            "className":"text_icon_buttons_style_4",
             "iconpadding": "7px",
-            "iconsize": "20px",
-            "padding": "15px 30px",
-            "fontsize": "medium",
-            "margin": "5px",
-            "bgcolor": "#3E065F",
-            "color": "white",
-            "border": "1px solid #3E065F",
-            "borderradius": "25px"
+            "iconsize": "20px"
             }
           ],
           "ID": "Bc2"

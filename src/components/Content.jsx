@@ -109,16 +109,21 @@ function Content({ nodeRef }) {
       ],
     });
 
+
+   
+
   const drop = (eve) => {
     setParent(eve.target);
 
     eve.preventDefault();
     let DropEl = eve.dataTransfer.getData("data");
     const getTag = document.getElementById(DropEl);
+    console.log(getTag)
 
     getTag.className === "header" ||
     getTag.name === "Image" ||
-    getTag.className === "footer"
+    getTag.className === "footer" ||
+    getTag.name === "forms"
       ? getTag.classList.add("resize")
       : getTag.classList.add("draggable");
 
@@ -140,6 +145,7 @@ function Content({ nodeRef }) {
     });
 
     eve.target.appendChild(getTag);
+
   };
 
   const dragOver = (eve) => {

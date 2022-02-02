@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FaPlus } from "react-icons/fa";
 import SidePanel from "./Panel";
 
-function SideBar() {
+function SideBar({ panelData }) {
   const [isAddBtnClicked, setBtn] = useState(false);
 
   const handleClick = () => {
@@ -20,7 +20,7 @@ function SideBar() {
         />
       </div>
       {isAddBtnClicked && (
-        <SidePanel isAddBtnClicked={isAddBtnClicked} setBtn={setBtn} />
+        <SidePanel isAddBtnClicked={isAddBtnClicked} setBtn={setBtn} panelData={panelData}/>
       )}
     </aside>
   );

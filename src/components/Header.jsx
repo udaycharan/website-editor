@@ -15,7 +15,7 @@ const lightTheme = {
  
 const darkTheme = {
   background: '#041C32',
-  text: 'gray',
+  text: 'white',
   textColor: "#FF87CA",
   logoColor: "gray"
   
@@ -35,7 +35,7 @@ const darkTheme = {
       </div>
       <div className="button-box">
         <DarkTheme light={lightTheme} dark={darkTheme} defaultDark={false} className= "theme-icon"/>
-        <button onClick={props.downloadFileAsImage}>Download as image</button>
+        <button onClick={props.downloadFileAsImage} >Download as image</button>
         <button onClick={props.downloadFile}>Download as Html</button>
       </div>
     </header>

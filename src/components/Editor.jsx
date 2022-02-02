@@ -1,11 +1,26 @@
-import React, { useRef, useCallback } from "react";
+import React, { useRef, useCallback, useEffect, useState } from "react";
 import SideBar from "./SideBar";
 import Content from "./Content";
 import Header from "./Header";
 import { toPng } from "html-to-image";
+import data from "../data.json"; 
 
 function Editor() {
   const nodeRef = useRef(null);
+  const [panelData, setPanelData] = useState([]);
+
+  useEffect(()=>{
+
+    if(localStorage.getItem("panelData") === null){
+
+      localStorage.setItem("panelData", JSON.stringify(data.data)); 
+    }
+
+    setPanelData(data.data);
+
+  },[])
+
+
 
   const downloadFile = () => {
     if (nodeRef.current === null) {
@@ -14,7 +29,7 @@ function Editor() {
 
     const obj = nodeRef.current.outerHTML;
     const blob = new Blob([obj], { type: "application/html" });
-    let url = window.URL.createObjectURL(blob, { type: "application/html" });
+    let url = window.URL.createObjectURL(blob);
     let a = document.createElement("a");
     a.href = url;
     a.download = "index.html";
@@ -46,7 +61,7 @@ function Editor() {
         downloadFileAsImage={downloadFileAsImage}
       />
       <div className="main-container">
-        <SideBar />
+        <SideBar panelData={panelData}/>
         <Content nodeRef={nodeRef} />
       </div>
     </div>

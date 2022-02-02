@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import data from "../data.json";
 import { FaTimes } from "react-icons/fa";
 import { MdDriveFolderUpload } from "react-icons/md";
 
 function SidePanel(props) {
-  let panelData = data.data;
+
   const [isListItemClicked, setListItem] = useState(false);
   const [parentTag, setTag] = useState("");
   const [isNestedListClicked, setNestedList] = useState(false);
   const [nestListTag, setNestedListTag] = useState("");
+
+  let panelData  = props.panelData;
 
   let uploadImageInitialData = panelData
     .filter((el) => el.type === "Image")
@@ -96,7 +97,7 @@ function SidePanel(props) {
   return (
     <div className="panel-box">
       <span className="panel-header">
-        <h5 style={{ margin: "9px 0px 0px 0px" }}>Add to Site</h5>
+        <h5 className="Add_to_site">Add to Site</h5>
         <FaTimes id="close-icon" onClick={() => closePanel()} />
       </span>
 
@@ -563,18 +564,7 @@ function SidePanel(props) {
                         onDragStart={drag}
                         onDragOver={dragOver}
                         key={style.ID}
-                        style={{
-                          backgroundColor: `${style.bgcolor}`,
-                          zIndex: `${style.zindex}`,
-                          color: `${style.color}`,
-                          cursor: `${style.cursor}`,
-                          padding: `${style.padding}`,
-                          fontSize: `${style.fontsize}`,
-                          margin: `${style.margin}`,
-                          border: `${style.border}`,
-                          letterSpacing: `${style.lettersace}`,
-                          borderRadius: `${style.borderradius}`,
-                        }}
+                        className = {style.classname}
                       >
                         {style.btnText}
                       </button>
@@ -596,17 +586,8 @@ function SidePanel(props) {
                         onDragStart={drag}
                         onDragOver={dragOver}
                         key={style.ID}
-                        style={{
-                          backgroundColor: `${style.bgcolor}`,
-                          zIndex: `${style.zindex}`,
-                          color: `${style.color}`,
-                          cursor: `${style.cursor}`,
-                          padding: `${style.padding}`,
-                          fontSize: `${style.fontsize}`,
-                          margin: `${style.margin}`,
-                          border: `${style.border}`,
-                          borderRadius: `${style.borderradius}`,
-                        }}
+                        className={style.className}
+
                       >
                         {style.btnText}
                         <i
@@ -824,6 +805,7 @@ function SidePanel(props) {
                         onDragStart={drag}
                         onDragOver={dragOver}
                         className={style.name}
+                        name={ele.name}
                       >
                         <h3>Login</h3>
                         <input type="text" name="username" id="form-username" />
