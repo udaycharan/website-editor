@@ -283,14 +283,8 @@ function SidePanel(props) {
                         onDragStart={drag}
                         onDragOver={dragOver}
                         id={style.h1}
-                        style={{
-                          zIndex: `${style.zindex}`,
-                          width: `${style.width}`,
-                          fontStyle: `${style.fontstyle}`,
-                          fontWeight: `${style.fontweight}`,
-                          padding: `${style.padding}`,
-                          cursor: `${style.cursor}`,
-                        }}
+                        className={style.classname}
+                       
                       >
                         {style.h1}
                       </h1>
@@ -300,14 +294,7 @@ function SidePanel(props) {
                         onDragOver={dragOver}
                         draggable={style.draggable}
                         id={style.h2}
-                        style={{
-                          zIndex: `${style.zindex}`,
-                          width: `${style.width}`,
-                          fontStyle: `${style.fontstyle}`,
-                          fontWeight: `${style.fontweight}`,
-                          padding: `${style.padding}`,
-                          cursor: `${style.cursor}`,
-                        }}
+                        className={style.classname}
                       >
                         {style.h2}
                       </h2>
@@ -317,15 +304,7 @@ function SidePanel(props) {
                         onDragOver={dragOver}
                         draggable={style.draggable}
                         id={style.h3}
-                        style={{
-                          width: `${style.width}`,
-                          color: `${style.color}`,
-                          zIndex: `${style.zindex}`,
-                          fontStyle: `${style.fontstyle}`,
-                          fontWeight: `${style.fontweight}`,
-                          padding: `${style.padding}`,
-                          cursor: `${style.cursor}`,
-                        }}
+                        className={style.classname}
                       >
                         {style.h3}
                       </h3>
@@ -335,15 +314,7 @@ function SidePanel(props) {
                         onDragOver={dragOver}
                         draggable={style.draggable}
                         id={style.h4}
-                        style={{
-                          width: `${style.width}`,
-                          color: `${style.color}`,
-                          zIndex: `${style.zindex}`,
-                          fontStyle: `${style.fontstyle}`,
-                          fontWeight: `${style.fontweight}`,
-                          padding: `${style.padding}`,
-                          cursor: `${style.cursor}`,
-                        }}
+                        className={style.classname}
                       >
                         {style.h4}
                       </h4>
@@ -353,14 +324,7 @@ function SidePanel(props) {
                         onDragOver={dragOver}
                         draggable={style.draggable}
                         id={style.h5}
-                        style={{
-                          width: `${style.width}`,
-                          zIndex: `${style.zindex}`,
-                          fontStyle: `${style.fontstyle}`,
-                          fontWeight: `${style.fontweight}`,
-                          padding: `${style.padding}`,
-                          cursor: `${style.cursor}`,
-                        }}
+                        className={style.classname}
                       >
                         {style.h5}
                       </h5>
@@ -370,13 +334,7 @@ function SidePanel(props) {
                         onDragOver={dragOver}
                         draggable={style.draggable}
                         id={style.h6}
-                        style={{
-                          width: `${style.width}`,
-                          zIndex: `${style.zindex}`,
-                          fontWeight: `${style.fontweight}`,
-                          padding: `${style.padding}`,
-                          cursor: `${style.cursor}`,
-                        }}
+                        className={style.classname}
                       >
                         {style.h6}
                       </h6>
@@ -385,14 +343,7 @@ function SidePanel(props) {
                         id={style.id}
                         onDragStart={drag}
                         onDragOver={dragOver}
-                        style={{
-                          width: `${style.paraWidth}`,
-                          maxWidth: `${style.paraMaxWidth}`,
-                          zIndex: `${style.zindex}`,
-                          padding: `${style.padding}`,
-                          fontStyle: `${style.fontstyle}`,
-                          cursor: `${style.cursor}`,
-                        }}
+                        className={style.className}
                       >
                         {style.para}
                       </p>
@@ -414,14 +365,7 @@ function SidePanel(props) {
                         onDragOver={dragOver}
                         id={style.ID}
                         key={style.h1}
-                        style={{
-                          width: `${style.width}`,
-                          zIndex: `${style.zindex}`,
-                          fontFamily: `${style.fontfamily}`,
-                          fontWeight: `${style.fontweight}`,
-                          padding: `${style.padding}`,
-                          cursor: `${style.cursor}`,
-                        }}
+                        className={style.classname}
                       >
                         {style.h1}
                       </h1>
@@ -432,14 +376,8 @@ function SidePanel(props) {
                         onDragOver={dragOver}
                         id={style.ID2}
                         key={style.h2}
-                        style={{
-                          width: `${style.width}`,
-                          zIndex: `${style.zindex}`,
-                          fontWeight: `${style.fontweight}`,
-                          padding: `${style.padding}`,
-                          fontFamily: `${style.fontfamily1}`,
-                          cursor: `${style.cursor}`,
-                        }}
+                        className={style.classname}
+
                       >
                         {style.h2}
                       </h2>
@@ -450,14 +388,7 @@ function SidePanel(props) {
                         onDragStart={drag}
                         onDragOver={dragOver}
                         key={style.h3}
-                        style={{
-                          width: `${style.width}`,
-                          zIndex: `${style.zindex}`,
-                          fontFamily: `${style.fontfamily}`,
-                          fontWeight: `${style.fontweight}`,
-                          padding: `${style.padding}`,
-                          cursor: `${style.cursor}`,
-                        }}
+                        className={style.classname}
                       >
                         {style.h3}
                       </h3>
@@ -468,14 +399,7 @@ function SidePanel(props) {
                         onDragStart={drag}
                         onDragOver={dragOver}
                         key={style.h4}
-                        style={{
-                          width: `${style.width}`,
-                          zIndex: `${style.zindex}`,
-                          fontFamily: `${style.fontfamily1}`,
-                          fontWeight: `${style.fontweight}`,
-                          padding: `${style.padding}`,
-                          cursor: `${style.cursor}`,
-                        }}
+                        className={style.classname}
                       >
                         {style.h4}
                       </h4>
@@ -486,14 +410,7 @@ function SidePanel(props) {
                         onDragStart={drag}
                         onDragOver={dragOver}
                         key={style.h5}
-                        style={{
-                          width: `${style.width}`,
-                          zIndex: `${style.zindex}`,
-                          fontWeight: `${style.fontweight}`,
-                          padding: `${style.padding}`,
-                          fontFamily: `${style.fontfamily}`,
-                          cursor: `${style.cursor}`,
-                        }}
+                        className={style.classname}
                       >
                         {style.h5}
                       </h5>
@@ -504,14 +421,7 @@ function SidePanel(props) {
                         onDragStart={drag}
                         onDragOver={dragOver}
                         key={style.h6}
-                        style={{
-                          width: `${style.width}`,
-                          zIndex: `${style.zindex}`,
-                          fontWeight: `${style.fontweight}`,
-                          padding: `${style.padding}`,
-                          fontFamily: `${style.fontfamily1}`,
-                          cursor: `${style.cursor}`,
-                        }}
+                        className={style.classname}
                       >
                         {style.h6}
                       </h6>
@@ -533,16 +443,7 @@ function SidePanel(props) {
                         onDragStart={drag}
                         onDragOver={dragOver}
                         key={style.ID}
-                        style={{
-                          width: `${style.paraWidth}`,
-                          maxWidth: `${style.paraMaxWidth}`,
-                          zIndex: `${style.zindex}`,
-                          fontStyle: `${style.fontstyle}`,
-                          fontWeight: `${style.fontweight}`,
-                          padding: `${style.padding}`,
-                          fontFamily: `${style.fontfamily}`,
-                          cursor: `${style.cursor}`,
-                        }}
+                        className={style.classname}
                       >
                         {style.para}
                       </p>

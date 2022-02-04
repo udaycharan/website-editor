@@ -10,48 +10,32 @@
           "stylesArr": [
             {
               "ID": "style-1",
-              "width": "fit-content",
               "h1": "Add Heading 1",
-              "zindex": "5",
               "h2": "Add Heading 2",
               "draggable": true,
-              "fontweight": 900,
-              "cursor": "pointer",
-              "padding": "0px 10px 0px 10px",
-              "fontstyle": "strong"
+              "classname": "panel_text_style_1"
+              
             },
-            { "ID": "style-2",
-              "width": "fit-content",
-              "paraWidth": "fit-content",
-              "paraMaxWidth": "500px",
+            { 
+              "ID": "style-2",
               "h3": "Add heading 3",
               "h4": "Add Heading 4",
-              "color": "#142F43",
-              "zindex": "5",
+              "classname": "panel_text_style_2",
               "draggable": true,
-              "fontweight": 600,
+              "className": "panel_para_style_1",
               "id" : "paragragh-1",
-              "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.", 
-              "cursor": "pointer",
-              "padding": "0px 10px 0px 10px",
-              "fontstyle": "bold"
+              "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
             },
 
             {  
               "ID": "style-3",
-              "width": "fit-content",
-              "paraWidth": "fit-content",
-              "paraMaxWidth": "500px",
               "h5": "Add Heading 5",
               "h6": "Add Heading 6",
-              "zindex": "5",
+              "classname": "panel_text_style_3",
+              "className": "panel_para_style_1",
               "draggable": true,
               "id" : "paragragh-2",
-              "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.", 
-              "fontstyle": "italic",
-              "padding": "0px 10px 0px 10px",
-              "fontweight": 500,
-              "cursor": "pointer"
+              "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
             }
           ],
           "ID": "Tc1"
@@ -68,14 +52,9 @@
               "width": "fit-content",
               "h1": "Big Title",
               "h2": "Caps Title",
-              "zindex": "5",
+              "classname": "panel_text_style_1",
               "draggable": true,
-              "fontfamily": "Roboto",
-              "fontfamily1": "'Genos', sans-serif",
-              "cursor": "pointer",
-              "padding": "0px 10px 0px 10px",
-              "fontweight": 900
-              
+              "fontfamily": "Roboto"
             },
             {  
               "ID": "style-5",
@@ -83,13 +62,8 @@
               "width": "fit-content",
               "h3": "Small Title",
               "h4": "Add Heading 4",
-              "zindex": "5",
-              "draggable": true,
-              "fontfamily": "'Oswald', sans-serif",
-              "fontfamily1": "'Genos', sans-serif",
-              "padding": "0px 10px 0px 10px",
-              "cursor": "pointer",
-              "fontweight": 600
+              "classname": "panel_text_style_2",
+              "draggable": true
               
             },
 
@@ -100,13 +74,8 @@
               "width": "fit-content",
               "h5": "Add Heading 5",
               "h6": "Add Heading 6",
-              "zindex": "5",
-              "fontfamily": "Roboto",
-              "fontfamily1": "'Genos', sans-serif",
-              "draggable": true,
-              "padding": "0px 10px 0px 10px",
-              "cursor": "pointer",
-              "fontweight": 500
+              "classname": "panel_text_style_3",
+              "draggable": true
             }
           ],
           "ID": "Tc2"
@@ -116,48 +85,24 @@
           "stylesArr": [
             { 
               "ID": "style-7",
-              "width": "fit-content",
-              "paraWidth": "fit-content",
-              "paraMaxWidth": "500px",
               "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-              "fontweight": 600,
-              "zindex": "5",
-              "padding": "0px 10px 0px 10px",
               "draggable": true,
-              "fontfamily": "Roboto",
-              "cursor": "pointer",
-              "fontstyle": "strong"
+              "classname": "panel_paragrapgh_styles"
             },
             {  
               
               "ID": "style-8",
-              "width": "fit-content",
-              "paraWidth": "fit-content",
-              "paraMaxWidth": "500px",
               "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-              "fontweight": 300,
-              "zindex": "5",
-              "padding": "0px 10px 0px 10px",
-              "fontfamily": "San serif",
               "draggable": true,
-              "cursor": "pointer",
-              "fontstyle": "bold"
+              "classname": "panel_paragrapgh_styles"
             },
 
             {   
               
               "ID": "style-9",
-              "width": "fit-content",
-              "paraWidth": "fit-content",
-              "paraMaxWidth": "500px",
               "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-              "fontstyle": "italic",
-              "zindex": "5",
               "draggable": true,
-              "padding": "0px 10px 0px 10px",
-              "fontfamily": "poppins",
-              "cursor": "pointer",
-              "fontweight": 400
+              "classname": "panel_paragrapgh_styles"
             }
           ],
           "ID": "Tc3"

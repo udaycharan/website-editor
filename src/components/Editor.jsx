@@ -21,7 +21,6 @@ function Editor() {
   },[])
 
 
-
   const downloadFile = () => {
     if (nodeRef.current === null) {
       return;
@@ -32,7 +31,7 @@ function Editor() {
     let url = window.URL.createObjectURL(blob);
     let a = document.createElement("a");
     a.href = url;
-    a.download = "index.html";
+    a.download = "preview.html";
     a.click();
   };
 
@@ -43,7 +42,6 @@ function Editor() {
 
     toPng(nodeRef.current, { cacheBust: true })
       .then((dataUrl) => {
-        console.log(dataUrl);
         const link = document.createElement("a");
         link.download = "preview.png";
         link.href = dataUrl;

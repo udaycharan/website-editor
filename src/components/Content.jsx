@@ -107,13 +107,11 @@ function Content({ nodeRef }) {
           endOnly: true,
         }),
       ],
-    });
-
-
-   
+    }); 
 
   const drop = (eve) => {
     setParent(eve.target);
+    console.log(nodeRef);
 
     eve.preventDefault();
     let DropEl = eve.dataTransfer.getData("data");
